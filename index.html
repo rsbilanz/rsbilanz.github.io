@@ -4,13 +4,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-  <script>
-  $(document).ready(function(){
-  $( "#result" ).load( "lance.html" );
-    $( "#result" ).load( "/lance.html" );
-    
-  //alert("test");
-  });
-  </script>
+
+<p>Click the button to display the total width of your screen, in pixels.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = "Total Width: " + screen.width + "px";
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
 </body>
 </html>
